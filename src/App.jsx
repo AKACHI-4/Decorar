@@ -4,7 +4,6 @@ import ARRoom from "./Pages/ARRoom";
 import DimRoom from "./Pages/DimRoom";
 import ErrorPage from "./Pages/ErrorPage";
 import Template from "./Pages/Template";
-import { Scrollbars } from "react-custom-scrollbars-2";
 
 function App() {
   const routes = [

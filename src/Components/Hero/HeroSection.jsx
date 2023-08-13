@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function HeroSection() {
-  const [backgroundColor, setbackgroundColor] = useState();
+  const [backgroundColor, setbackgroundColor] = useState("skyblue");
 
   const getRandomColor = () => {
     const r = Math.floor(Math.random() * 256);
@@ -33,7 +33,7 @@ function HeroSection() {
         </p>
         <button
           type="submit"
-          className="my-8 md:my-16 mx-auto px-14 py-4 text-white bg-transparent font-medium rounded-lg text-lg md:text-xl"
+          className="my-8 md:my-16 mx-auto px-10 py-4 text-gray-900 bg-transparent font-medium rounded-lg text-lg md:text-xl"
           style={{
             backgroundColor: backgroundColor,
           }}

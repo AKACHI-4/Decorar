@@ -1,6 +1,6 @@
-# Virtual-ID
+# Decorar
 
-Virtual-ID is an innovative web application that allows users to design and visualize their dream rooms using augmented reality (AR). With our platform, users can create personalized interior designs by selecting furniture and decor items from a rich catalog and placing them within their real-world environment.
+Decorar is an innovative web application that allows users to design and visualize their dream rooms using augmented reality (AR). With our platform, users can create personalized interior designs by selecting furniture and decor items from a rich catalog and placing them within their real-world environment.
 
 ## Features
 

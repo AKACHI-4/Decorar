@@ -2,7 +2,7 @@ function MainDim() {
   return (
     <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 md:gap-4 py-12 mb-8">
       <div className="md:w-[58%] justify-around">
-        <form class="flex flex-grow gap-6 md:gap-8 mx-2">
+        <form class="flex flex-grow gap-4 md:gap-8 mx-2">
           <div class="mb-6 flex-grow w-full sm:w-auto">
             <label
               for="height"

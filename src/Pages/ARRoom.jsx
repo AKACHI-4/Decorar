@@ -3,7 +3,7 @@ import ArMain from "../Components/ARRoom/ArMain";
 
 function ARRoom() {
   return (
-    <div className="mx-auto py-6">
+    <section className="mx-auto py-6">
       <div className="flex flex-col md:flex-row gap-10 justify-around py-7">
         <div className="flex flex-col gap-2 mx-2 md:mx-6">
           <h1 className="text-blue-500 font-semibold">What it Provides?</h1>
@@ -17,7 +17,7 @@ function ARRoom() {
         </div>
       </div>
       <ArMain />
-    </div>
+    </section>
   );
 }
 

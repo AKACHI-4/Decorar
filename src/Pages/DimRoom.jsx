@@ -2,7 +2,7 @@ import MainDim from "../Components/DimRoom/MainDim";
 
 function DimRoom() {
   return (
-    <div className="mx-auto py-12 flex gap-10 flex-col ">
+    <section className="mx-auto py-12 flex gap-10 flex-col ">
       <div className="flex justify-center flex-col items-center mb-8">
         <h1 className="text-center text-4xl md:text-5xl font-bold mb-6 px-10 md:px-52">
           Bring your vision to life with our <br /> 2D room design tool.
@@ -14,7 +14,7 @@ function DimRoom() {
         </p>
       </div>
       <MainDim />
-    </div>
+    </section>
   );
 }
 

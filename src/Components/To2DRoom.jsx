@@ -1,7 +1,11 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
 
 function To2DRoom() {
+  const handleClick = () => {
+    window.location.href = "/2d-room";
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="flex flex-col md:flex-row gap-4 md:gap-10 p-2 md:p-8 md:items-center">
       <div className="flex flex-col justify-between order-2 md:ml-20">
@@ -16,16 +20,16 @@ function To2DRoom() {
           will generate a precise 2D design for exploring different layouts and
           placements.
         </div>
-        <Link
-          to="/2d-room"
+        <button
+          onClick={handleClick}
           className="w-32 md:w-40 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-2xl text-md md:text-lg p-2 text-center mr-2 mb-2"
         >
           Get Started
-        </Link>
+        </button>
       </div>
       <div className="mx-auto order-1">
         <img
-          src="../../assets/02.png"
+          src="https://i.ibb.co/Ch7XMt9/02.png"
           alt="left-image"
           className="p-4 max-w-sm md:max-w-lg"
         />

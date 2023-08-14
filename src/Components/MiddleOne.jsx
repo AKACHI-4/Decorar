@@ -4,8 +4,8 @@ import { BiArrowFromTop } from "react-icons/bi";
 
 function MiddleOne() {
   return (
-    <ul className="p-16 md:py-36 flex flex-col md:flex-row gap-6 justify-between bg-transparent">
-      <li className="flex gap-3 px-4 py-2">
+    <ul className="p-14 sm:mx-auto md:py-36 flex flex-col md:flex-row gap-5 justify-between bg-transparent">
+      <li className="flex gap-3 px-6 py-2">
         <TbPointFilled color="red" size={30} className="mt-2" />
         <div>
           <h4 className="font-semibold text-xl text-white">
@@ -15,7 +15,7 @@ function MiddleOne() {
         </div>
       </li>
       <li className="md:hidden h-24 w-2 bg-white mx-auto"></li>
-      <li className="flex gap-3 px-4 py-2">
+      <li className="flex gap-3 px-6 py-2">
         <TbPointFilled color="green" size={30} className="mt-2" />
         <div>
           <h4 className="font-semibold text-xl text-white">2D Room Design</h4>
@@ -23,7 +23,7 @@ function MiddleOne() {
         </div>
       </li>
       <li className="md:hidden h-24 w-2 bg-white mx-auto"></li>
-      <li className="flex gap-3 px-4 py-2">
+      <li className="flex gap-3 px-6 py-2">
         <TbPointFilled color="blue" size={30} className="mt-2" />
         <div>
           <h4 className="font-semibold text-xl text-white">

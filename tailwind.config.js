@@ -9,7 +9,6 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('assets/hero.png')",
-        back: "url('assets/bg.png')",
       },
     },
   },

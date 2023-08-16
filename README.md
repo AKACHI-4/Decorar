@@ -33,7 +33,6 @@ To run the Virtual-ID application locally, follow these steps:
 
 ## Timeline
 
-
 ## Contributions
 
 We welcome contributions from the open-source community to enhance and expand Virtual-ID. If you have any feature suggestions, bug reports, or improvements, please feel free to open an issue or submit a pull request.

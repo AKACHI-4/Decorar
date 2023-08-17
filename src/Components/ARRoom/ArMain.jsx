@@ -28,7 +28,7 @@ function ArMain() {
           setUploading(false);
           setprogressbar(0);
         }
-      }, 500);
+      }, 300);
     }
   };
 
@@ -78,6 +78,7 @@ function ArMain() {
                       type="file"
                       accept="image/*"
                       onChange={handleFileUpload}
+                      required
                     />
                     <div className="text bg-indigo-600 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-indigo-500">
                       Upload Image

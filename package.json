@@ -9,8 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/fiber": "^8.13.7",
-    "@types/three": "^0.155.0",
+    "@vite/vitejs": "^2.3.19",
     "axios": "^1.4.0",
     "overlayscrollbars": "^2.2.1",
     "overlayscrollbars-react": "^0.5.1",

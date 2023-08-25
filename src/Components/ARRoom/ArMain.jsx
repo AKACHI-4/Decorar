@@ -19,7 +19,7 @@ function ArMain() {
       setUploading(true);
 
       let curProgress = 0;
-      const interval = setInterval(() => {
+      setInterval(() => {
         curProgress += 10;
         setprogressbar(curProgress);
 
@@ -90,7 +90,6 @@ function ArMain() {
           </div>
         )}
       </div>
-      {/* A kind of x-direction carousel in the case of mobile phone */}
       <div className="w-full md:w-[30%] h-[180px] md:h-[700px] bg-yellow-100 rounded-lg"></div>
     </div>
   );

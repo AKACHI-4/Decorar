@@ -1,6 +1,12 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { Component, useContext, useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+
+// function Model({ url }) {
+//   const modelRef = useRef();
+
+//   return <primitive object={modelRef.current} />;
+// }
 
 function RoomSim() {
   const containerRef = useRef();
@@ -8,6 +14,8 @@ function RoomSim() {
   const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer();
   const controls = useRef();
+
+  // const selectedAccessory = useContext(AccessoryContext).selectedAccessory;
 
   useEffect(() => {
     const roomWidth = 3;
@@ -69,12 +77,50 @@ function RoomSim() {
 
     scene.add(wallsMesh, floorMesh);
 
+    // if (selectedAccessory) {
+    //   const loader = new THREE.GLTFLoader();
+
+    //   loader.load(selectedAccessory.ModelUrl, (gltf) => {
+    //     const accessoryModel = gltf.scene;
+
+    //     accessoryModel.position.set(0, 0.1, 0);
+    //     accessoryModel.scale.set(0.2, 0.2, 0.2);
+
+    //     scene.add(accessoryModel);
+
+    //     const handleMouseEvents = (event) => {
+    //       if (accessoryModel) {
+    //         const mouse = new THREE.Vector2(
+    //           (event.clientX / window.innerWidth) * 2 - 1,
+    //           -(event.clientY / window.innerHeight) * 2 + 1
+    //         );
+
+    //         const raycaster = new THREE.Raycaster();
+    //         raycaster.setFromCamera(mouse, camera);
+
+    //         const intersects = raycaster.intersectObject(floorMesh);
+
+    //         if (intersects.length > 0) {
+    //           const intersectionPoint = intersects[0].point;
+    //           accessoryModel.position.copy(intersectionPoint);
+    //         }
+    //       }
+    //     };
+
+    //     document.addEventListener("mousemove", handleMouseEvents);
+    //     document.addEventListener("touchmove", handleMouseEvents);
+
+    //     animate();
+    //   });
+    // }
+
     animate();
 
     return () => {
       controls.current.dispose();
       window.removeEventListener("resize", handleWindowResize);
     };
+    // }, [selectedAccessory]);
   }, []);
 
   const animate = () => {

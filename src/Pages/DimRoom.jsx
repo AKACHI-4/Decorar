@@ -1,4 +1,5 @@
 import MainDim from "../Components/DimRoom/MainDim";
+// import AccessoryContext from "../Context/AccessoryContext";
 
 function DimRoom() {
   return (
@@ -13,7 +14,9 @@ function DimRoom() {
           room accessories.
         </p>
       </div>
+      {/* <AccessoryContext> */}
       <MainDim />
+      {/* </AccessoryContext> */}
     </section>
   );
 }

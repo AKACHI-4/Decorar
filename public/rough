@@ -1,0 +1,136 @@
+// import React, { useState, useEffect, useRef } from "react";
+// import * as THREE from "three";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+
+// function ModelSim() {
+//   const containerRef = useRef();
+//   const scene = new THREE.Scene();
+//   const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+//   const renderer = new THREE.WebGLRenderer();
+//   // Other variables and controls...
+
+//   const [selectedAccessory, setSelectedAccessory] = useState(null);
+//   const accessoryLoader = new GLTFLoader();
+
+//   useEffect(() => {
+//     // Initialize scene, camera, controls, etc.
+//     // ...
+
+//     // Load the selected accessory when it changes
+//     if (selectedAccessory) {
+//       accessoryLoader.load(selectedAccessory.url, (gltf) => {
+//         const accessory = gltf.scene;
+//         // Position and add the accessory to the scene
+//         accessory.position.set(0, 0, 0); // Adjust the position
+//         scene.add(accessory);
+//       });
+//     }
+
+//     // Animate the scene
+//     animate();
+
+//     return () => {
+//       // Clean up
+//       // ...
+//     };
+//   }, [selectedAccessory]);
+
+//   // Handle accessory selection
+//   const handleAccessorySelection = (accessory) => {
+//     setSelectedAccessory(accessory);
+//   };
+
+//   return (
+//     <div className="flex">
+//       {/* Left side: 3D room */}
+//       <div className="w-3/4" ref={containerRef}>
+//         {/* Render your 3D room here */}
+//       </div>
+
+//       {/* Right side: Accessories catalog */}
+//       <div className="w-1/4">
+//         <h2>Accessories Catalog</h2>
+//         <ul>
+//           {accessories.map((accessory) => (
+//             <li key={accessory.id}>
+//               <button onClick={() => handleAccessorySelection(accessory)}>
+//                 {accessory.name}
+//               </button>
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default ModelSim;
+
+
+// function ModelSim() {
+//   const [selectedCategory, setSelectedCategory] = useState(null);
+//   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
+//   const [selectedAccessory, setSelectedAccessory] = useState(null);
+//   // Other state and effects...
+
+//   const handleCategoryChange = (categoryId) => {
+//     setSelectedCategory(categoryId);
+//     setSelectedSubcategory(null); // Reset subcategory when changing category
+//     setSelectedAccessory(null); // Reset accessory when changing category
+//   };
+
+//   const handleSubcategoryChange = (subcategoryId) => {
+//     setSelectedSubcategory(subcategoryId);
+//     setSelectedAccessory(null); // Reset accessory when changing subcategory
+//   };
+
+//   const handleAccessorySelection = (accessoryId) => {
+//     setSelectedAccessory(accessoryId);
+//   };
+
+//   // Based on selectedCategory, selectedSubcategory, and selectedAccessory,
+//   // load the corresponding accessory and place it in the scene.
+
+//   return (
+    // <div className="flex">
+    //   <div className="w-1/4">
+    //     {/* Category dropdown */}
+    //     <select onChange={(e) => handleCategoryChange(e.target.value)}>
+    //       <option value="">Select a category</option>
+    //       {categories.map((category) => (
+    //         <option key={category.id} value={category.id}>
+    //           {category.name}
+    //         </option>
+    //       ))}
+    //     </select>
+
+    //     {/* Subcategory dropdown */}
+    //     {selectedCategory && (
+    //       <select onChange={(e) => handleSubcategoryChange(e.target.value)}>
+    //         <option value="">Select a subcategory</option>
+    //         {selectedCategory.subcategories.map((subcategory) => (
+    //           <option key={subcategory.id} value={subcategory.id}>
+    //             {subcategory.name}
+    //           </option>
+    //         ))}
+    //       </select>
+    //     )}
+
+    //     {/* Accessory dropdown */}
+    //     {selectedSubcategory && (
+    //       <select onChange={(e) => handleAccessorySelection(e.target.value)}>
+    //         <option value="">Select an accessory</option>
+    //         {selectedSubcategory.accessories.map((accessory) => (
+    //           <option key={accessory.id} value={accessory.id}>
+    //             {accessory.name}
+    //           </option>
+    //         ))}
+    //       </select>
+    //     )}
+    //   </div>
+    //   <div className="w-3/4" ref={containerRef}>
+    //     {/* Render your 3D room here */}
+    //   </div>
+    // </div>
+//   );
+// }
